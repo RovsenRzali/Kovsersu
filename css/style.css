@@ -47,13 +47,14 @@ body {
     object-fit: fill;
 }
 
-.top-direction-container-pages span {
+.top-direction-container-pages span, a {
    /* border: solid; */
     margin: 0 20px 0 20px;
     padding: 19px 0 19px 0;
     font-family: 'Open Sans', sans-serif; 
     font-size: 16px;
     font-weight: 700;
+    color: #fff;
 }
 
 
