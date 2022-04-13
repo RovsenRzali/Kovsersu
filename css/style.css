@@ -127,7 +127,7 @@ body {
   vertical-align: middle;
 }
 
-.hover a {
+.dropdown-content a {
   border-bottom: 1px solid;
   display: block;
   margin: 7px;
@@ -148,17 +148,16 @@ body {
   /* padding-right: .6rem; */
 }
 
-.hover {
+.dropdown-content {
   border: solid;
   display: none;
   /* width: 99%; */
   height: 50%;
   box-sizing: border-box;
   background-color: #fff;
-  /* transition: all 1s ease; */
 }
 
-.dropdown:hover .hover {
+.dropdown:hover .dropdown-content {
   border: solid;
   display: block;
   box-sizing: border-box;
@@ -169,7 +168,6 @@ body {
   bottom: 0;
   right: 0;
   left: 1px;
-  /* transform: translateX(-1%); */
 }
 
 @media (max-width: 576px) {
@@ -203,13 +201,12 @@ body {
     display: block;
   }
 
-  .hover {
+  .dropdown-content {
     width: 342px;
   }
 
-  .dropdown:hover .hover {
+  .dropdown:hover .dropdown-content {
     left: 50.5%;
-
   }
 }
 
@@ -247,7 +244,6 @@ body {
 
 .slide-content {
   /* border: solid; */
-  /* margin: 50px; */
   padding-right: 50%;
   text-align: left;
   box-sizing: border-box;
@@ -287,13 +283,11 @@ body {
   border-color: #bfc9ea;
   border-radius: 50px;
   background-color: #fff;
-  box-sizing: border;
   max-width: 210px;
   /* max-height: 70px; */
   padding: 3% 2%;
   margin: 1.25rem 0rem;
   box-sizing: border-box;
-  border-radius: 50px;
   text-align: center;
   cursor: pointer;
 }
@@ -342,6 +336,50 @@ body {
     font-weight: bold;
     box-sizing: border-box;
   }
+}
+
+@media (min-width: 576px) and (max-width: 800px) {
+  #slide-content-maincontainer {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    margin-left: 2%;
+  }
+
+  .slide-content {
+    padding-right: 40%;
+  }
+
+  .slide-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .slide-content h6 {
+  font-size: 0.9rem;
+  margin: 0;
+
+  }
+
+  .slide-content p {
+    line-height: 1.3rem;
+  }
+
+
+  .about {
+    /* width: 0px; */
+    /* max-height: 70px; */
+    padding: 2% 1%;
+    margin: 1rem 0rem 0.5rem;
+  }
+
+  .about a {
+    /* border: solid; */
+    margin: 1% 1%;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
 }
 
 .arrows {
